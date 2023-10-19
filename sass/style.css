@@ -12,7 +12,7 @@
 
 #header-top {
   padding: 10px 0px;
-  background-color: #2FB4B4;
+  background-color: #6193f8;
 }
 #header-top .header-top-main-box {
   display: flex;
@@ -27,36 +27,45 @@
   font-weight: 600;
 }
 
+#header-bottom {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 4;
+  background-color: #fff;
+  border-bottom: 2px solid #7ea7f6;
+}
 #header-bottom .header-bottom-main-box {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  padding: 20px 0px;
 }
-#header-bottom .header-bottom-main-box .header-bottom-logo {
+#header-bottom .header-bottom-main-box .header-bottom-box .header-bottom-logo {
   display: flex;
   align-items: center;
 }
-#header-bottom .header-bottom-main-box .header-bottom-logo img {
-  width: 80px;
+#header-bottom .header-bottom-main-box .header-bottom-box .header-bottom-logo img {
+  display: none;
 }
-#header-bottom .header-bottom-main-box .header-bottom-logo h2 {
-  color: #2FB4B4;
+#header-bottom .header-bottom-main-box .header-bottom-box .header-bottom-logo h2 {
+  color: #6193f8;
 }
-#header-bottom .header-bottom-main-box ul {
+#header-bottom .header-bottom-main-box .header-bottom-box ul {
   display: flex;
-  gap: 30px;
-  list-style-type: none;
+  align-items: center;
+  gap: 40px;
   margin-bottom: 0px;
+  list-style-type: none;
 }
-#header-bottom .header-bottom-main-box ul a {
+#header-bottom .header-bottom-main-box .header-bottom-box ul a {
   text-decoration: none;
-  color: #2FB4B4;
-  font-weight: 600;
-  transition: 0.3s;
+  color: #6193f8;
+  font-weight: 700;
+  transition: all 0.2s;
 }
-#header-bottom .header-bottom-main-box ul a:hover {
-  border-bottom: 2px solid #2FB4B4;
+#header-bottom .header-bottom-main-box .header-bottom-box ul a:hover {
+  border-bottom: 2px solid #6193f8;
   padding-bottom: 10px;
 }
 #header-bottom .header-bottom-icon-home {
@@ -65,7 +74,7 @@
   gap: 30px;
 }
 #header-bottom .header-bottom-icon-home a {
-  color: #2FB4B4;
+  color: #6193f8;
   font-size: 25px;
   text-decoration: none;
   transition: all 0.7s;
@@ -75,30 +84,74 @@
 }
 
 #first-section {
-  background-color: #2FB4B4;
+  background: rgb(126, 167, 246);
+  background: linear-gradient(90deg, rgb(126, 167, 246) 34%, rgb(50, 113, 246) 100%);
 }
-#first-section .first-section-container {
+#first-section .container-1 .first-section-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
-#first-section .first-section-container .first-section-left {
+#first-section .container-1 .first-section-container .first-section-left h1 {
+  color: #fff;
+  font-size: 40px;
+  font-weight: 700;
+}
+#first-section .container-1 .first-section-container .first-section-left p {
+  color: #fff;
+  padding-right: 100px;
+  margin: 30px 0px;
+}
+#first-section .container-1 .first-section-container .first-section-left a {
+  text-decoration: none;
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 25%;
+  transition: all 0.3s;
+}
+#first-section .container-1 .first-section-container .first-section-left a:hover {
+  background-color: #fff;
+  color: #7ea7f6;
+}
+
+#advantage {
+  margin: 100px 0px;
+}
+#advantage .advantege-main-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+#advantage .advantege-main-box .advantege-box {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 30px 10px;
+  box-shadow: 0px 0px 27px -1px rgba(34, 60, 80, 0.2);
+  border-radius: 30px;
+  width: 280px;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
 }
-#first-section .first-section-container .first-section-left h1 {
-  text-transform: uppercase;
-  color: #fff;
+#advantage .advantege-main-box .advantege-box:hover {
+  transform: scale(1.1);
 }
-#first-section .first-section-container .first-section-left p {
-  padding-right: 130px;
-  font-weight: 500;
-  color: #fff;
+#advantage .advantege-main-box .advantege-box i {
+  font-size: 30px;
+  color: #6193f8;
 }
-#first-section .first-section-container .first-section-left a {
-  text-decoration: none;
-  width: 23%;
-  padding: 10px 30px;
-  border-radius: 20px;
-  color: #2FB4B4;
-  background-color: #fff;
+#advantage .advantege-main-box .advantege-box h3 {
+  color: #6193f8;
+  font-weight: 600;
+}
+#advantage .advantege-main-box .advantege-box p {
+  color: #6193f8;
+  font-size: 17px;
 }/*# sourceMappingURL=style.css.map */
